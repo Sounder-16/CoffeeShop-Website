@@ -1,0 +1,31 @@
+#  This is a small scale Coffee & Tea Packets selling Shop Website that delivers the orders in the southern states of india.
+
+#  This is a small scale website that ia made with HTML, CSS & Javascript that is launched in Node JS.
+
+#  img folder contains all the images required.
+
+#  log folder contains files for logins history and errors history in server.
+
+#  middleware folder conatins logger.js file for handling the file write operations in the log folder.
+
+#  views folder conatins all HTML, CSS & Javascript files.
+
+#  server.js is the Node JS file that contains the server logics for serving appropriate files for the requests.
+for installations of :- 
+Download Node JS & NPM(Node Package Manager) in the Node JS website.
+
+#  data.json file contains the informations about the orders made and acts as a database.
+
+#  NODE JS Dependencies - date-fns
+This is installed for date alignment.
+
+for installations of :- 
+-> Download Node JS & NPM(Node Package Manager) in the Node JS website.
+-> to install data-fns node_modulus, Go to Terminal & type 'npm i date-fns' command.
+
+=> to Run the code :
+
+1. Go to terminal, enter "node server".(Now the server will be running on specified Port in local machine).
+2. Open another terminal, enter "npx json-server -p {PORT NUMBER} -w data.json" command. (user can use any allowed PORT NUMBER). (json-server) is a fake JSON server API for performing CRUD operations in datas.
+3. The PORT NUMBER & URL in terminal command must match the port and URL specified in payment.js for POSTing the data.
+4. Now, you can open the browser and type "localhost:5000" in browser search box.

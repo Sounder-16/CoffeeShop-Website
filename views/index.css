@@ -1,0 +1,458 @@
+:root{
+    --BGCOLOR : whitesmoke;
+    --COLOR : black;
+    --ALTCOLOR : azure;
+    --ALTBGCOLOR : darkred;
+    --NAVBGCOLOR : rgb(20, 151, 168);
+    --SHADECOLOR : gray;
+    --SIGN-BTN-COLOR : rgb(157, 204, 226);
+    --ALTNAVBGCOLOR : azure;
+    --CARDHOVERBGCOLOR : green;
+    --WIDTH : 1348px;
+    --MIN-HEIGHT : 2250px;
+    --SCREENWIDTH : 375px;
+    --SCREENLINKCOLOR : darkred;
+    --SCREENLINKHOVERCOLOR : darkgoldenrod;
+}
+body{
+    font-family: monospace;
+    margin: 0;
+    color: var(--COLOR);
+}
+#logo{
+    margin-top: 1.2rem;
+    margin-left: 2rem;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+a{
+    text-decoration: none;
+    color: var(--ALTCOLOR);
+}
+a:focus-within{
+    border-radius: 1rem;
+}
+nav{
+    display: flex;
+    width: 100%;
+    background-color: var(--NAVBGCOLOR);
+    padding-bottom: 0.5rem;
+    justify-content:space-between;
+    border-bottom: 3px solid var(--COLOR); 
+    position: fixed;
+    z-index: 1;
+}
+.nav-list{
+    list-style: none;
+    display: inline-flex;
+    margin-right: 3rem;
+    align-items: center;
+    margin-top: 1.7rem;
+}
+li{
+    margin-right: 2.3rem;
+    font-size: 1.3rem;
+}
+ul > li > a:hover{
+    text-decoration: underline;
+    color: aquamarine;
+}
+main{
+    display: flex;
+    width: var(--WIDTH);
+    min-height: var(--MIN-HEIGHT);
+    margin: auto;
+    padding-top: 4rem;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--BGCOLOR);
+    box-sizing: border-box;
+}
+p > a{
+    color: blueviolet;
+}
+#nav-bar{
+    display: none;
+}
+h1{
+    font-size: 3.5rem;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    padding-top: 3rem;
+    margin-top: 1.5rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    word-spacing: 1rem;
+}
+#bill > tr{
+    border: 2px solid var(--COLOR);
+}
+blockquote{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+address{
+    padding-top: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+#logo > a{
+    color: var(--COLOR);
+    font-style: italic;
+    color: var(--BGCOLOR);
+    text-shadow: 2px 2px 3px var(--COLOR);
+}
+
+#logo-header{
+    font-style: italic;
+    font-size: 7rem;
+    margin-top: 4rem;
+    margin-bottom: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: 1.7rem;
+    text-shadow: 5px 5px 4px var(--SHADECOLOR);
+}
+h2{
+    font-size: 3rem;
+    margin-top: 6rem;
+    text-decoration: underline;
+    font-family: monospace;
+    letter-spacing: 0.7rem;
+    padding-top: 4rem;
+    margin-left: 45%;
+    margin-right: 55%;
+}
+#quote-container{
+    background-color: var(--BGCOLOR);
+    margin-top: 2rem;
+    border-radius: 1rem;
+    padding: 1.5rem 1rem;
+    box-shadow: 4px 4px 10px var(--SHADECOLOR);
+}
+#products{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 4px solid var(--SHADECOLOR);
+    padding: 1.5rem 1rem;
+    border-radius: 1.5rem;
+}
+.card{
+    padding-bottom: 1.5rem;
+    background-color: var(--BGCOLOR);
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 7px 7px 5px var(--SHADECOLOR);
+}
+figure{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0;
+}
+.card:hover{
+    background-color: var(--CARDHOVERBGCOLOR);
+    color: var(--ALTCOLOR);
+    animation-name: pop-up;
+    animation-delay: 0s;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    transition-property: transform;
+    transform: scale(103%);
+}
+@keyframes pop-up{
+    0%{
+        transform: scale(100%)
+    }
+    50%{
+        transform: scale(108%);
+    }
+    100%{
+        transform: scale(103%);
+    }
+}
+#payment{
+    padding: 0.7rem 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: wheat;
+    position: relative;
+    bottom: 20px;
+    left: 40%;
+    box-sizing: border-box;
+    width: 190px;
+    height: 50px;
+    cursor: pointer;
+}
+#payment > a{
+    color: black;
+}
+#kumbakonam{
+    width: 250px;
+    height: 250px;
+}
+#green-coffee{
+    width: 210px;
+}
+#peppermint{
+    width: 250px;
+}
+#lemon-tea{
+    width: 240px;
+}
+#black-coffee{
+    width: 250px;
+}
+#menu-container{
+    padding-bottom: 2rem;
+    position: relative;
+}
+figcaption{
+    margin-top: 1rem;
+}
+img{
+    border-radius: 1.5rem;
+    outline: 2px solid var(--COLOR);
+}
+.card > p{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    line-height: 2rem;
+}
+.display-btn{
+    width: 120px;
+    height: 20px;
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+#billings > h3{
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-align: center;
+}
+hr{
+    width: 1000px;
+}
+#reset-btn{
+    position: absolute;
+    top: 11rem;
+    right: 12rem;
+    padding: 0.5rem 1rem;
+    outline: 3px solid var(--COLOR);
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.sign-plus, .sign-minus{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: var(--SIGN-BTN-COLOR);
+    font-weight: bolder;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.items{
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    background-color: var(--BGCOLOR);
+    box-shadow: 5px 5px 10px var(--SHADECOLOR);
+}
+.output{
+    background-color: var(--SIGN-BTN-COLOR);
+    width: 35%;
+    height: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.total{
+    margin-top: 1rem;
+    width: 100px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+table{
+    width: 100%;
+    border: 2px solid var(--COLOR);
+    padding: 0.5rem 0.2rem;
+    text-align: center;
+    line-height: 1.8rem;
+}
+th{
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.items{
+    margin-top: 1rem;
+    min-height: 300px;
+    padding: 0.5rem 1rem;
+    margin-bottom: 2rem;
+}
+#about{
+    width: 85%;
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 8px var(--SHADECOLOR);
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+#about > p{
+    text-indent: 5rem;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 1348px;
+    background-color: var(--BGCOLOR);
+    align-items: center;
+    margin: auto;
+    font-size: 1.5rem;
+}
+@media screen and (max-width: 375px) {
+    body{
+        color: white;
+    }
+    header{
+        width: 375px;
+    }
+    #logo-header{
+        font-size: 3rem;
+    }
+    #reset-btn{
+        top:6.5rem;
+        right: 3rem;
+        font-size: 0.7rem;
+        padding: 0.3rem 0.7rem;
+        color: whitesmoke;
+        background-color: var(--ALTBGCOLOR);
+        outline: 2px solid black;
+    }
+    main{
+        background-color: var(--ALTBGCOLOR);
+        width: 375px;
+        justify-content: center;
+    }
+    #quote-container{
+        font-size: 1rem;
+        color: var(--ALTCOLOR);
+        background-color: var(--ALTBGCOLOR);
+    }
+    h1{
+        display: none;
+    }
+    .card{
+        width: 100%;
+        color: black;
+        box-shadow: none;
+    }
+    .card > img{
+        width: 80%;
+        height: auto;
+    }
+    #nexus-logo{
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+    #logo{
+        width: 65px;
+        height: 30px;
+        font-size: 1.5rem;
+        margin-top: 0.7rem;
+        margin-left: 1rem;
+        background-color: var(--ALTBGCOLOR);
+        border-radius: 0.5rem;
+        padding: 0.3rem 0.6rem;
+        outline: 2px solid black;
+    }
+    nav > ul > li > a{
+        color: var(--SCREENLINKCOLOR);
+        line-height: 2rem;
+    }
+    nav > ul > li > a:hover{
+        color: var(--SCREENLINKHOVERCOLOR);
+    }
+    .nav-list{
+        margin-top: 50px;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    #nav-bar{
+        width: 25px;
+        height: 18px;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        margin-right: 1rem;
+        margin-top: 1.5rem;
+        cursor: pointer;
+    }
+    #nav-bar > div{
+        background-color: var(--ALTBGCOLOR);
+        width: 100%;
+        height: 4px;
+        margin-bottom: 3px;
+    }
+    header{
+        width: 375px;
+    }
+    #menu{
+        margin: 0;
+        padding-top: 6rem;
+        padding-bottom: 2rem;
+        text-align: center;
+        font-size: 2rem;
+    }
+    nav{
+        background-color: white;
+        display: flex;
+        position: fixed;
+        justify-content: space-between;
+    }
+    footer{
+        width: 375px;
+        background-color: var(--ALTBGCOLOR);
+    }
+    .items{
+        min-height: 100px;
+        background-color: var(--ALTBGCOLOR);
+    }
+    hr{
+        width: 300px;
+    }
+    .ignore{
+        display: none;
+    }
+    #billings{
+        color: var(--ALTCOLOR);
+        font-size: 10px;
+    }
+    #payment{
+        position: relative;
+        margin-left: 0;
+        bottom: 15px;
+        left: 26%;
+    }
+    #about{
+        color: var(--COLOR);
+    }
+}

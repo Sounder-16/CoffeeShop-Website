@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sounder S">
+    <link rel="stylesheet" href="./payment.css">
+    <link rel="icon" href="./img/CoffeeShopLogo2.png" type="image/x-icon">
+    <title>Payment</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html">NEXUS</a>
+        <h1>Payment</h1>
+    </header>
+    <main>
+        <div class="main">
+            <div class="nexus-payment">NEXUS PAYS</div>
+            <div class="details">
+                <p id="receipt">Receipt ID</p>
+                <hr>
+                <p id="amount">Total Amount</p>
+                <hr>
+                <p id="date">Issued Date for</p>
+                <hr>
+            </div>
+        </div>
+        <div id="side-container">
+            <div class="head">
+                <div id="nexus-payment">NEXUS PAYS</div>
+            </div>
+            <div class="main-section">
+                <h2>Payment Details</h2>
+                <p>Hello User,<br>
+                   Your Products will be arrived shortly within a period of 2-3 weeks.<br>
+                   <em>(Note : Cash on Delivery payment is available & only in some southern states of india)</em>
+                </p>
+                <div class="forms">
+                <form method="get" action="./success.html">
+                    <fieldset>
+                        <legend>Address</legend>
+                        <div id="names">
+                            <label>FULL NAME</label><br>
+                            <input type="text" name="fullname" id="fullname" autofocus><br>
+                            <div class="msg"></div>
+                        </div>
+                        <div id="mobiles">
+                            <label>MOBILE NUMBER</label><br>
+                            <input type="text" name="mobile" id="phone"><br>
+                            <div class="msg"></div>
+                        </div>
+                        <div id="email">
+                            <label>EMAIL ADDRESS</label><br>
+                            <input type="text" name="mail" id="mail"><br>
+                            <div class="msg"></div>
+                        </div>
+                        <div id="streets">
+                            <label>DOOR NO. & STREET</label><br>
+                            <input type="text" name="street" id="street"><br>
+                            <div class="msg"></div>
+                        </div>
+                        <div id="place">
+                            <label>CITY</label><br>
+                            <input type="text" name="city" id="location"><br>
+                            <div class="msg"></div>
+                        </div>
+                        <div id="pincodes">
+                            <label>PINCODE</label><br>
+                            <input type="text" name="pincode" id="pincode"><br>
+                            <div class="msg"></div>
+                        </div>
+                        <div>
+                            <label for="state">STATE</label><br>
+                            <select name="state"id="state-option"><br>
+                                <option value="andhra pradesh">Andhra Pradesh</option>
+                                <option value="maharashtra">Maharashtra</option>
+                                <option value="karnataka">Karnataka</option>
+                                <option value="kerala">Kerala</option>
+                                <option value="odisha">Odisha</option>
+                                <option value="tamil nadu" selected>Tamil Nadu</option>
+                            </select>
+                            <div class="msg"></div>
+                        </div>
+                        <button type="submit">Place Order</button>
+                    </fieldset>
+                </form>
+                </div>
+            </div>
+            <div class="footer">
+                <p>Contact for Enquiry : <a href="mailto:www.paymentenquiry@nexus.com">www.paymentenquiry@nexus.com</a></p>
+                <p>Contact for Enquiry : <a href="tel:+911234567890">+91 1234567890</a></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <center>
+            <address>
+            No:10, New XYZ Street,<br>
+            ATD Colony,<br>
+            Chennai - 603310.<br>
+            </address>
+            <p>
+                Contact  : <a href="tel:+919876543210">+919876543210</a>
+            </p>
+            <p>
+        2023 Nexus CopyRights&copy; Nexus&trade;</p>
+        </center>
+    </footer>
+    <script src="./payment.js"></script>
+</body>
+</html>

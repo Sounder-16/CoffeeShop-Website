@@ -1,0 +1,84 @@
+:root{
+    --HEADERBGCOLOR : rgb(2, 224, 20);
+    --HEADERHEIGHT : 80px;
+    --FONTSTYLE : monospace;
+}
+img{
+    width: 300px;
+    height: auto;
+    margin: auto;
+}
+body{
+    margin: 0;
+    font-family: var(--FONTSTYLE);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    width: 100%;
+    height: var(--HEADERHEIGHT);
+    background-color: var(--HEADERBGCOLOR);
+    position: fixed;
+    top: 0;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid black;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+}
+header > .logo{
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid white;
+    border-radius: 1rem;
+    margin-left: 30px;
+    font-weight: bolder;
+    color: whitesmoke;
+    text-decoration: none;
+}
+h1{
+    font-size: 2rem;
+    margin-right: 50px;
+}
+img{
+    margin-top: 100px;
+}
+p{
+    margin: auto;
+    font-size: 2rem;
+    margin-top: 40px;
+}
+
+img{
+    animation-name: tick-animation;
+    animation-delay: 0.2s;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    transition-property: transform;
+}
+@keyframes tick-animation {
+    0% {
+        transform: scale(100%);
+    }
+    40%{
+        transform: scale(120%);
+    }
+    100%{
+        transform: scale(100%);
+    }
+}
+.disappear{
+    display: none;
+}
+span{
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: absolute;
+    top: 90px;
+    margin: auto;
+}

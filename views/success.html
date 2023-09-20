@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sounder S">
+    <link rel="stylesheet" href="./success.css">
+    <link rel="icon" href="./img/CoffeeShopLogo2.png" type="image/x-icon">
+    <title>Payment Success</title>
+</head>
+<body>
+    <header>
+        <a class="logo">NEXUS</a>
+        <h1>Payment</h1>
+    </header>
+    <main>
+    <img src="./img/tick_symbol_1.png" alt="">
+    <p>Payment Successfull</p>
+    <span class="disappear">Redirecting to Home Page...</span>
+    </main>
+    <script>
+        // this piece of code for redirecting to home page
+        setTimeout(() => {window.location.replace("./index.html")}, 2500);
+        const redirect = document.querySelector('span');
+        setTimeout(() =>{
+            redirect.classList.remove('disappear')
+        }, 700)
+    </script>
+</body>
+</html>
